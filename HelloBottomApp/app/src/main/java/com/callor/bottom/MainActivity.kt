@@ -80,4 +80,5 @@ class MainActivity : AppCompatActivity(), LoginFragment.BottomNav {
         binding.navView.visibility = if(status) View.VISIBLE else View.GONE
 
     }
+
 }

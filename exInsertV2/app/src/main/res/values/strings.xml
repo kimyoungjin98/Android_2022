@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">exInsertV2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Insert</string>
+    <string name="title_notifications">List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">New</string>
+</resources>

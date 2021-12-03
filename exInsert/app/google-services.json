@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "852425213308",
+    "project_id": "insert-9ccb4",
+    "storage_bucket": "insert-9ccb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852425213308:android:07c4561520d48e0a5550f9",
+        "android_client_info": {
+          "package_name": "com.callor.exinsert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852425213308-aneei8irvkm8qhtuo0bp9nthk57evq8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7JIPL4Bkka7JK8Vy5lBz8P-NtNYwylsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852425213308-aneei8irvkm8qhtuo0bp9nthk57evq8m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

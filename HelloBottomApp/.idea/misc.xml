@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.165625" />
+        <entry key="app/src/main/res/layout/activity_compose.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1099899091826438" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1453125" />
