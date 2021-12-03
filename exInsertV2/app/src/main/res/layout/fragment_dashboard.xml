@@ -4,13 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.dashboard.DashboardFragment">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/c_author"
+
+    <EditText
+        android:id="@+id/author"
+        android:scrollHorizontally="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="작성자"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:hint="작성자" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:hint="제목" />
+
+    <EditText
+        android:id="@+id/date"
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:hint="날짜" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:gravity="top|left"
+        android:hint="내용을 입력"
+        android:inputType="textMultiLine"
+        android:maxLines="20" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전송"
         />
+
+
 
 </LinearLayout>
