@@ -2,25 +2,29 @@ package com.callor.exinsert.ui.dashboard
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.callor.exinsert.MainActivity
-import com.callor.exinsert.R
 import com.callor.exinsert.databinding.FragmentDashboardBinding
 import com.callor.exinsert.model.Board
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 class DashboardFragment : Fragment() {
 
     private lateinit var dashboardViewModel: DashboardViewModel
     private var _binding: FragmentDashboardBinding? = null
+
+    // 파이어베이스 연결 설정
+    private val db = Firebase.firestore
+
 
     lateinit var mainActivity: MainActivity
 
@@ -54,7 +58,8 @@ class DashboardFragment : Fragment() {
            var date:EditText = binding.date
            var content:EditText = binding.content
 
-            Log.d("title",  )
+            var board:Board = Board(1, author.text.toString(), title.text.toString(), date.text.toString(), content.text.toString())
+            addData(board)
 
         })
 
@@ -63,7 +68,13 @@ class DashboardFragment : Fragment() {
         return binding.root
     }
 
+    fun addData(board: Board){
 
+        db.collection("data")
+            .add(board)
+
+
+    }
 
 
     override fun onDestroyView() {
